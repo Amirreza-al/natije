@@ -13,28 +13,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 120vh;
+            height: 100vh;
         }
         .container {
             background-color: #fff;
-            border-radius: 90px;
-            padding: 220px;
+            border-radius: 30px;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
         h1 {
             color: #ff6600;
-            font-size: 40px;
+            font-size: 30px;
         }
         p {
-            font-size: 25px;
-            line-height: 1.6;
+            font-size: 20px;
+            line-height: 1.4;
         }
         .photo {
             margin-top: 20px;
         }
         .photo img {
-            max-width: 100%;
+            width: 100%; /* Set the image width to 100% of its container */
+            max-height: 70vh; /* Adjust the maximum height to control image size */
             border-radius: 10px;
         }
         @keyframes float {
@@ -42,7 +43,7 @@
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-10px);
             }
             100% {
                 transform: translateY(0);
