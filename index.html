@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>Football Match Result</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,48 +17,41 @@
         }
         .container {
             background-color: #fff;
-            border-radius: 30px;
+            border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        h1 {
-            color: #ff6600;
-            font-size: 30px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.4;
-        }
-        .photo {
-            margin-top: 20px;
-        }
-        .photo img {
-            width: 100%; /* Set the image width to 100% of its container */
-            max-height: 70vh; /* Adjust the maximum height to control image size */
+        .team-box {
+            display: inline-block; /* Display boxes inline */
+            background-color: #e5e5e5;
             border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
         }
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-            100% {
-                transform: translateY(0);
-            }
+        .team-name {
+            font-size: 24px;
+            color: #a00c0c;
+        }
+        .win-count {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>عاسالام تولدت مبارک</h1>
-        <p>زندگیت پر از کشمشی</p>
-        <p>هرچی دسته نبات جمع کردم تقدیم تو</p>
-        <div class="photo">
-            <img src="https://dl.dropboxusercontent.com/scl/fi/3kjc9phkb1uro1xqrpb5l/final.png?rlkey=udbq4ihhm0dcirtayruhgy6lz&dl=0" alt="Birthday Photo">
+        <h1>نتایج فوتبال</h1>
+        <div class="team-box">
+            <div class="team-name">حسین</div>
+            <p class="win-count">تعداد برد: 0</p>
         </div>
+        <div class="team-box">
+            <div class="team-name">محمد</div>
+            <p class="win-count">تعداد برد: 1</p>
+        </div>
+        <p>آخرین بازی: برد محمد</p>
+        <p>تاریخ : 26 مهر</p>
     </div>
 </body>
 </html>
